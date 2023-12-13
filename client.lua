@@ -1,0 +1,6 @@
+RegisterNetEvent('esx:setPlayerHealthArmor')
+AddEventHandler('esx:setPlayerHealthArmor', function(health, armor)
+    local playerPed = PlayerPedId()
+    SetEntityHealth(playerPed, health)
+    SetPedArmour(playerPed, armor)
+end)
